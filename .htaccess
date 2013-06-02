@@ -1,0 +1,24 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+#regular redirects
+#RewriteCond %{THE_REQUEST} /technologies/
+#RewriteRule ^/technologies/$ /portfolio/
+#RewriteRule ^/portfolio/technologies(.*)/$ /technologies/$1/
+#Redirects from pages on old site
+#RewriteRule ^portfolio.html$ portfolio/ [R=301,L]
+</IfModule>
+
+#END Redirects from pages on old site
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

@@ -1,0 +1,366 @@
+/*
+Theme Name:     CordSlatton.com
+Theme URI:      http://cordslatton.com/
+Description:    theme for CordSlatton.com based on theBootstrap theme 
+Author:         Cord Slatton
+Author URI:     http://cordslatton.com/about/
+Template:       the-bootstrap
+Version:        0.1.0
+*/
+
+@import url("../the-bootstrap/style.min.css");
+
+body{
+	background-image: url('/wp-content/themes/cordslatton/img/blue_sand_tiling.png');
+	background-repeat: repeat;
+	background-color: #29414b;
+}
+#page{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color: #ffffff;
+	background-color: #32200d;
+	background-image: url('/wp-content/themes/cordslatton/img/noisy-texture-100x100.png');
+	border: 2px solid #775C3F;
+}
+body.home header.page-header{
+	display: none;
+}
+body.single-portfolio .portfolio_thumb{
+	margin-right: 25px;
+}
+p{
+	font-size: 16px;
+	color: #fff;
+}
+a{
+	color: #6D94A5;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #303552;
+}
+a:hover{	
+	color: #BBA48A;
+}
+#site-title{
+	margin-top: -15px;	
+}
+#site-title a{
+	color: #6D94A5;
+	font-size: 48px;
+	text-shadow: 2px 2px 2px #303552;
+	text-decoration: none;
+}
+#site-title a:hover{	
+	color: #BBA48A;
+}
+#site-description{
+	font-size: 26px;
+	font-weight: normal;
+	text-shadow: 2px 2px 2px #303552;
+}
+h1.entry-title, 
+#container .breadcrumbs{
+	font-size: 26px;
+	text-shadow: 2px 2px 2px #303552;
+	color: #6D94A5;
+}
+.nav>li>a:hover {
+	background-color: #BBAD8A;
+	color: #fff;
+}
+.container{
+	min-width: 360px;
+}
+#page-footer{
+	background-color: transparent;
+	border: none;
+}
+
+/* contact form */
+form.wpcf7-form{
+	position: relative;
+}
+form.wpcf7-form div.name{
+	margin-top: 15px;
+}
+form.wpcf7-form div.name,
+form.wpcf7-form div.email,
+form.wpcf7-form div.subject,
+form.wpcf7-form div.message{
+	margin-bottom: 25px;
+	display: inline-block;
+}
+form.wpcf7-form div.name,
+form.wpcf7-form div.email,
+form.wpcf7-form div.subject{
+	float: left;
+	clear: both;
+	margin-right: 20px;
+	width: 375px;
+}
+form.wpcf7-form div.name .label,
+form.wpcf7-form div.email .label,
+form.wpcf7-form div.subject .label{
+	padding-top: 6px;
+}
+form.wpcf7-form div.name span.name,
+form.wpcf7-form div.email span.email,
+form.wpcf7-form div.subject span.subject{
+	position: absolute;
+	left: 175px;
+}
+
+form.wpcf7-form div.message{
+	margin-left: 0px;
+}
+form.wpcf7-form div.message .label{
+	display: block;
+	margin-bottom: 10px;
+}
+form.wpcf7-form div.message textarea{
+	max-width: 350px;
+	width: 350px;
+}
+form.wpcf7-form .label{
+	background-color: transparent;
+	color: #ffffff;
+	font-family: "Alegreya", arial, sans-serif;
+	font-size: 18px !important;
+	text-shadow: 2px 2px 2px #303552;
+	margin-right: 15px;
+	font-weight: normal;
+}
+form.wpcf7-form .formAction{
+	float: right;
+	clear: both;
+}
+form.wpcf7-form .wpcf7-submit{
+	font-size: 28px;
+	padding: 10px 35px;
+}
+/* end contact form */
+
+.btn{
+	font-family: "Alegreya", arial, sans-serif !important;
+}
+.portfolio_thumb {
+	margin-right: 30px;
+}
+aside.well{
+	background-color: transparent;
+}
+#resume{
+	background-color: #FFFFFF;
+	color: #333;
+	width: 750px;
+	margin: 0 auto;
+}
+#resume a{
+	text-shadow: none;
+	display: block;
+}
+#resume p{
+	color: #333;
+}
+.portfolio_short_content .item_title{
+	padding-bottom: 10px;
+}
+.portfolio_short_content .item_title a {
+	font-size: 22px;
+	text-shadow: 2px 2px 2px #303552;
+}
+.read_more,
+.portfolio_content .item_title .read_more a{
+	display: none;
+}
+.portfolio_short_content .portfolio_terms{
+	border: none;
+	top: 0;
+}
+.portfolio_short_content p{
+	font-size: 14px;
+}
+p.portfolio_shrtDesc{
+	padding-bottom: 0;
+}
+.portfolio_terms a {
+	font-weight: normal;
+}
+h4.date{
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 0;
+}
+h5.technologies{
+	font-weight: normal;
+	display: inline-block;
+	margin: 10px 10px 0 0;
+}
+.portfolio_content .item_title{
+	margin-top: 15px;
+}
+.pagination .btn{
+	display: inline;
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	margin: 0 5px;
+	padding: 5px 8px;
+}
+.page-id-5 #content{
+	float: none;	
+}
+.page-id-5 #content .entry-content{
+	margin: 0 auto;
+}
+.label .post-edit-link{
+	letter-spacing: 2px;
+	font-weight: normal;
+}
+article.page{
+	margin-bottom: 0;
+}
+.tagcloud a{
+	padding: 3px 6px;
+	font-weight: normal;
+	border: 1px solid #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: 5px;
+	display:  inline-block;
+	/*white-space: nowrap;*/
+}
+.alignleft{
+	margin-bottom: 10px;
+}
+a.btn{
+	font-weight: normal;
+}
+#container .breadcrumbs{
+	border: none;
+}
+.breadcrumbs .separator{
+	display: inline-block;
+	margin: 0 6px;
+}
+.nav-pills>li{
+	margin-left: 10px;
+}
+#primary{
+	padding: 0 15px;	
+	color: #6D94A5;
+}
+a.portfolio-link{
+	width: 110px;
+	margin: 25px auto 0;
+	display: block;
+}
+#menu-navigation a{
+	font-size: 16px;
+}
+
+/* responsive styles */
+@media (max-width: 480px) {
+	.entry-content .imgContainer{
+		float: left;
+		width: 100%;
+	}
+	.entry-content img{
+		margin: 0 auto 10px;
+	}	
+}
+@media (max-width: 979px) and (min-width: 768px){
+	#secondary{
+		clear: both;
+	}
+	.home #secondary{
+		width: 100%;
+	}
+	.well{
+		border: none;
+	}	
+}
+@media (max-width: 979px){
+	#primary form.wpcf7-form > div > div{
+		float: none;
+		display: block;
+	}
+	form.wpcf7-form div.name,
+	form.wpcf7-form div.email,
+	form.wpcf7-form div.subject{
+		width: auto;
+	}
+}
+
+@media (max-width: 767px){
+	#primary,
+	#secondary{
+		float: left;
+	}
+	#primary img{
+		display: block;
+	}
+	#resume{
+		width: auto;
+	}
+	.well{
+		border: none;
+	}
+	.portfolio_short_content{
+		float: left;
+		width: 265px;
+	}
+	form.wpcf7-form label{
+		display: block;
+	}
+	form.wpcf7-form div.message{
+		margin-left: 0;
+	}
+	form.wpcf7-form div.message textarea{
+		width: 250px;
+	}
+	form.wpcf7-form div.name span.name,
+	form.wpcf7-form div.email span.email,
+	form.wpcf7-form div.subject span.subject{
+		position: relative;
+		left: 0;
+	}
+}
+
+@media (max-width: 979px) and (min-width: 768px){
+	#resume{
+		width: 700px;
+	}
+	.span12 {
+		width: 710px;
+	}
+}
+
+/* normal */
+@media (min-width: 979px) and (max-width: 1200px){	
+	.portfolio_short_content{
+		width: 265px;
+	}
+	#secondary{
+		margin-left: 0;
+		width: 280px;
+	}	
+}
+/* end normal */
+
+@media (min-width: 979px){
+	form.wpcf7-form div.message{
+		margin-left: 50px;
+	}
+}
+@media (min-width: 1200px){
+	#secondary.span4 {
+		width: 340px;
+	}
+	form.wpcf7-form div.message{
+		margin-left: 200px;
+	}
+}
+
