@@ -7,7 +7,9 @@ RewriteRule ^technologies/$ portfolio/ [R,L]
 
 #Redirects from pages on old joomla site - 6/2/2013
 RewriteRule ^portfolio\.html$ portfolio/ [R=301,L]
-RewriteRule ^portfolio/.+$ portfolio/ [R=301,L]
+RewriteRule ^portfolio/web-development.*$ portfolio/ [R=301,L]
+RewriteRule ^portfolio/graphic-design.*$ portfolio/ [R=301,L]
+RewriteRule ^portfolio/onsite-services.*$ portfolio/ [R=301,L]
 RewriteRule ^portfolio/resume\.html$ resume/ [R=301,L]
 RewriteRule ^services/.*$ portfolio/ [R=301,L]
 RewriteRule ^contact/email-contact.html$ contact/ [R=301,L]
