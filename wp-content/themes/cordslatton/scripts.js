@@ -60,11 +60,12 @@ jQuery(function($){
 	checkWidth();
     	
     // Bind event listener
+    //TODO remove console.log from production version
     $(window).resize(function(){
 		console.log('checkWidth: ', checkWidth() );	
     });
     
-    //active menu classes for interior portfolio pages
+    //active menu classes for portfolio menu link item when on interior portfolio pages
     if(checkPage('tax-portfolio_technologies'))
     	$('#menu-item-30').addClass('active');
 });

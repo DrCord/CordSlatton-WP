@@ -172,9 +172,15 @@ aside.well{
 .portfolio_short_content .item_title{
 	padding-bottom: 10px;
 }
-.portfolio_short_content .item_title a {
+.portfolio_short_content .item_title a.titleLink,
+.portfolio_short_content .item_title span.titleLink.noLink {
 	font-size: 22px;
 	text-shadow: 2px 2px 2px #303552;
+}
+/* titles with no link need to match titles with links styling */
+.portfolio_short_content .item_title span.titleLink.noLink {
+	color: #6D94A5;
+	font-weight: bold;
 }
 .read_more,
 .portfolio_content .item_title .read_more a{

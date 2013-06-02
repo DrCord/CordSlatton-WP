@@ -110,7 +110,7 @@ get_header(); ?>
 									$date_compl		= explode( "/", $date_compl );
 									$date_compl		= date( get_option( 'date_format' ), strtotime( $date_compl[1]."-".$date_compl[0].'-'.$date_compl[2] ) );
 								}
-								$link					= get_post_meta($post->ID, '_prtfl_link', true);
+								$link			= get_post_meta($post->ID, '_prtfl_link', true);
 								$short_descr	= get_post_meta($post->ID, '_prtfl_short_descr', true);
 								$full_descr		= $post->post_content != "" ? $post->post_content : get_post_meta($post->ID, '_prtfl_descr', true);
 							} ?> 
@@ -121,10 +121,10 @@ get_header(); ?>
 							</div>
 							<div class="portfolio_short_content">
 								<div class="item_title">										
-									<?php if( parse_url( $link ) !== false ) { ?>
+									<?php if( (parse_url( $link ) !== false) && ( $link !== '') ) { ?>
 										<a href="<?php echo $link ?>" class="titleLink" target="_blank"><?php echo get_the_title(); ?></a>
 									<?php } else { ?>
-										<?php echo get_the_title(); ?>
+										<span class="titleLink noLink"><?php echo get_the_title(); ?></span>
 									<?php } ?>
 								</div> <!-- .item_title -->
 								<?php if( (1 == $portfolio_options['prtfl_date_additional_field']) && ($date_compl != '') ) { ?>
