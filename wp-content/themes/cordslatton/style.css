@@ -275,6 +275,9 @@ a.portfolio-link{
 	}
 	.entry-content img{
 		margin: 0 auto 10px;
+	}
+	#menu-navigation{
+		float: left;
 	}	
 }
 @media (max-width: 979px) and (min-width: 768px){
@@ -307,9 +310,6 @@ a.portfolio-link{
 	}
 	#primary img{
 		display: block;
-	}
-	#menu-navigation{
-		float: left;
 	}
 	#resume{
 		width: auto;
