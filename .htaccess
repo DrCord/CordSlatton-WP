@@ -1,15 +1,19 @@
-
 <IfModule mod_rewrite.c>
 RewriteEngine On
-#regular redirects
-#RewriteCond %{THE_REQUEST} /technologies/
-#RewriteRule ^/technologies/$ /portfolio/
-#RewriteRule ^/portfolio/technologies(.*)/$ /technologies/$1/
-#Redirects from pages on old site
-#RewriteRule ^portfolio.html$ portfolio/ [R=301,L]
-</IfModule>
+RewriteBase /
 
+#regular redirects
+RewriteRule ^technologies/$ portfolio/ [R,L]
+
+#Redirects from pages on old joomla site - 6/2/2013
+RewriteRule ^portfolio\.html$ portfolio/ [R=301,L]
+RewriteRule ^portfolio/.+$ portfolio/ [R=301,L]
+RewriteRule ^portfolio/resume\.html$ resume/ [R=301,L]
+RewriteRule ^services/.*$ portfolio/ [R=301,L]
+RewriteRule ^contact/email-contact.html$ contact/ [R=301,L]
+RewriteRule ^contact/about-me.html$ / [R=301,L]
 #END Redirects from pages on old site
+</IfModule>
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
