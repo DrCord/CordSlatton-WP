@@ -11,8 +11,10 @@ Version:        0.1.0
 @import url("../the-bootstrap/style.min.css");
 
 body{
-	background-image: url('/wp-content/themes/cordslatton/img/blue_sand_tiling.png');
+	background-image: url('/wp-content/uploads/2013/04/blue_sand_tiling_100.png');
 	background-repeat: repeat;
+	background-position: top left;
+	background-attachment: fixed;
 	background-color: #29414b;
 }
 #page{
@@ -163,6 +165,10 @@ aside.well{
 #resume p{
 	color: #333;
 }
+
+#resume #techSpecs{
+	font-size: 16px;
+}
 .portfolio_short_content .item_title{
 	padding-bottom: 10px;
 }
@@ -301,6 +307,9 @@ a.portfolio-link{
 	}
 	#primary img{
 		display: block;
+	}
+	#menu-navigation{
+		float: left;
 	}
 	#resume{
 		width: auto;
