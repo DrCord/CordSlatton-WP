@@ -21,6 +21,30 @@ jQuery(function($){
 			$(this).css('font-size', newSize + 'px');
 		}						
 	});
+	//fix ajax loader
+	
+	
+	$form = $('form.wpcf7-form');
+	$formAction = $form.find('.formAction');
+	$formAction.find('.ajax-loader').remove();
+	$ajaxLoader =  '<div id="floatingCirclesG" class="ajax-loader" style="visibility: hidden;">';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_01"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_02"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_03"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_04"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_05"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_06"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_07"></div>';
+	$ajaxLoader += '<div class="f_circleG" id="frotateG_08"></div>';
+	$ajaxLoader += '</div>';
+	$formAction.append($ajaxLoader);
+	$form.submit(function(){
+		$form.find('#floatingCirclesG').css('visibility', 'visible');
+		fixAjaxLoader();
+	});
+	
+	$('.pageList li').addClass('btn btn-info btn-large');
+
 	
 //resize window events	
 	//store the reference outside the event handler:
@@ -69,3 +93,14 @@ jQuery(function($){
     if(checkPage('tax-portfolio_technologies'))
     	$('#menu-item-30').addClass('active');
 });
+
+function fixAjaxLoader() {
+	  if (jQuery(".wpcf7-response-output").is(":visible")){
+	    // It's visible
+	    jQuery('form.wpcf7-form').find('#floatingCirclesG').css('visibility', 'hidden');
+	  }
+	  else {
+	    // it's not visible
+	    setTimeout( 'fixAjaxLoader()', 100 );
+	  }
+	}

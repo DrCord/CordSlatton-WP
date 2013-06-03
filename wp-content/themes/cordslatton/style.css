@@ -83,6 +83,15 @@ h1.entry-title,
 form.wpcf7-form{
 	position: relative;
 }
+form.wpcf7-form .span11{
+	padding: 15px 5px;
+}
+.wpcf7-response-output{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 25px 5px;
+}
 form.wpcf7-form div.name{
 	margin-top: 15px;
 }
@@ -141,8 +150,38 @@ form.wpcf7-form .wpcf7-submit{
 	font-size: 28px;
 	padding: 10px 35px;
 }
+form span.wpcf7-not-valid-tip{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	width: auto;
+}
+.wpcf7-response-output{
+	font-size: 16px;
+}
 /* end contact form */
-
+/* 404 page */
+.pageList{
+	list-style-type: none;
+	margin-top: 20px;
+}
+.pageList{
+	font-size: 22px;
+}
+.pageList li{
+	color: #fff;
+	display: inline-block;
+	margin: 10px;
+	padding: 7px 20px;	
+}
+.pageList li a{
+	color: #fff;
+}
+.error404 .entry-content p{
+	margin-bottom: 20px;
+}
+/* end 404 oage */
 .btn{
 	font-family: "Alegreya", arial, sans-serif !important;
 }
@@ -272,6 +311,185 @@ a.portfolio-link{
 #menu-navigation a{
 	font-size: 16px;
 }
+/* css loader animation */
+#floatingCirclesG{
+position:relative;
+width:32px;
+height:32px;
+-moz-transform:scale(0.6);
+-webkit-transform:scale(0.6);
+-ms-transform:scale(0.6);
+-o-transform:scale(0.6);
+transform:scale(0.6);
+}
+
+.f_circleG{
+position:absolute;
+background-color:#FFFFFF;
+height:6px;
+width:6px;
+-moz-border-radius:3px;
+-moz-animation-name:f_fadeG;
+-moz-animation-duration:1.36s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-border-radius:3px;
+-webkit-animation-name:f_fadeG;
+-webkit-animation-duration:1.36s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-border-radius:3px;
+-ms-animation-name:f_fadeG;
+-ms-animation-duration:1.36s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-border-radius:3px;
+-o-animation-name:f_fadeG;
+-o-animation-duration:1.36s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+border-radius:3px;
+animation-name:f_fadeG;
+animation-duration:1.36s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#frotateG_01{
+left:0;
+top:13px;
+-moz-animation-delay:0.51s;
+-webkit-animation-delay:0.51s;
+-ms-animation-delay:0.51s;
+-o-animation-delay:0.51s;
+animation-delay:0.51s;
+}
+
+#frotateG_02{
+left:4px;
+top:4px;
+-moz-animation-delay:0.68s;
+-webkit-animation-delay:0.68s;
+-ms-animation-delay:0.68s;
+-o-animation-delay:0.68s;
+animation-delay:0.68s;
+}
+
+#frotateG_03{
+left:13px;
+top:0;
+-moz-animation-delay:0.85s;
+-webkit-animation-delay:0.85s;
+-ms-animation-delay:0.85s;
+-o-animation-delay:0.85s;
+animation-delay:0.85s;
+}
+
+#frotateG_04{
+right:4px;
+top:4px;
+-moz-animation-delay:1.02s;
+-webkit-animation-delay:1.02s;
+-ms-animation-delay:1.02s;
+-o-animation-delay:1.02s;
+animation-delay:1.02s;
+}
+
+#frotateG_05{
+right:0;
+top:13px;
+-moz-animation-delay:1.19s;
+-webkit-animation-delay:1.19s;
+-ms-animation-delay:1.19s;
+-o-animation-delay:1.19s;
+animation-delay:1.19s;
+}
+
+#frotateG_06{
+right:4px;
+bottom:4px;
+-moz-animation-delay:1.36s;
+-webkit-animation-delay:1.36s;
+-ms-animation-delay:1.36s;
+-o-animation-delay:1.36s;
+animation-delay:1.36s;
+}
+
+#frotateG_07{
+left:13px;
+bottom:0;
+-moz-animation-delay:1.53s;
+-webkit-animation-delay:1.53s;
+-ms-animation-delay:1.53s;
+-o-animation-delay:1.53s;
+animation-delay:1.53s;
+}
+
+#frotateG_08{
+left:4px;
+bottom:4px;
+-moz-animation-delay:1.7s;
+-webkit-animation-delay:1.7s;
+-ms-animation-delay:1.7s;
+-o-animation-delay:1.7s;
+animation-delay:1.7s;
+}
+
+@-moz-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-webkit-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-ms-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@-o-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+@keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FFFFFF}
+
+}
+
+/* custom loader code */
+div.wpcf7 .ajax-loader{
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+/* end css loader */
+
 
 /* responsive styles */
 @media (max-width: 480px) {
